@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from './Icons';
-import { Noun, Social, Wallet } from '../server/api/types';
+import { Noun, Social, WalletDetails } from '../server/api/types';
 import React from 'react';
 import Stack from './Stack';
 import Text from './Text';
@@ -17,7 +17,7 @@ export default function BidderProfileHeader({
   dapps,
 }: {
   address: string;
-  details: Wallet | undefined;
+  details: WalletDetails | undefined;
   balance:
     | {
         eth: string | undefined;
