@@ -135,6 +135,7 @@ export default function BidderProfileInfo({
                             <td
                               style={{
                                 color: `${activity.winner === address ? 'var(--green)' : 'var(--red)'}`,
+                                textAlign: 'center',
                               }}
                             >
                               {activity.winner === address ? 'WON' : 'LOST'}
@@ -144,6 +145,7 @@ export default function BidderProfileInfo({
                               style={{
                                 color: `var(--dark-bg)`,
                                 backgroundColor: `var(--green)`,
+                                textAlign: 'center',
                               }}
                             >
                               Live
@@ -191,9 +193,6 @@ export default function BidderProfileInfo({
         .activity-table {
           max-height: 11rem;
           overflow-y: auto;
-        }
-        td {
-          text-align: center;
         }
         .dot {
           width: 20px;
